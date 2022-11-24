@@ -30,14 +30,16 @@
 }
 
 body {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
   background-color: var(--color-white);
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1600px;
+  margin: 0px auto;
 }
 
 /* ------------------------------Header----------------------------- */
@@ -45,14 +47,14 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.container {
+header .container {
   display: flex;
   align-items: center;
 }
 
 .logo {
   margin-left: 215px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -123,15 +125,24 @@ header {
 /* ------------------------------------Main----------------------------------- */
 
 .hero {
+  text-align: center;
+}
+
+.hero .container {
   display: inline-block;
   background-color: var(--hero-bg-color);
+  height: 600px;
 }
 
 .hero-text {
+  width: 696px;
+  margin-top: 200px;
+  margin-left: 452px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  text-align: inherit;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
@@ -142,7 +153,7 @@ header {
   font-size: 16px;
   font-family: inherit;
   line-height: 1.87;
-  text-align: center;
+  text-align: inherit;
   letter-spacing: 0.06em;
   color: var(--color-white);
   background-color: var(--accent-color);
@@ -240,7 +251,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
