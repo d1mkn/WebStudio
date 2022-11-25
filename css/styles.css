@@ -114,6 +114,7 @@ header .container {
 }
 
 .contact-info {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -132,13 +133,10 @@ header .container {
 /* ------------------------------------Main----------------------------------- */
 
 .hero {
-  text-align: center;
-}
-
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-bg-color);
+  text-align: center;
 }
 
 .hero-text {
@@ -183,6 +181,7 @@ header .container {
 }
 
 .benefit-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 2;
@@ -207,7 +206,7 @@ header .container {
 /* ---------------------------Our competencies---------------------------- */
 .competencies {
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 .competencies-title {
@@ -224,7 +223,6 @@ header .container {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-bottom: 92px;
 }
 
 .competencies-item {
@@ -295,11 +293,8 @@ header .container {
 
 /* ------------------------------------Footer---------------------------------- */
 
-footer {
+.footer {
   background-color: #2f303a;
-}
-
-footer .container {
   padding: 60px 0px;
 }
 
@@ -317,6 +312,7 @@ footer .container {
 }
 
 .footer-address {
+  margin-top: 20px;
   font-style: normal;
 }
 
@@ -326,10 +322,6 @@ footer .container {
 
 .footer-item {
   margin-top: 9px;
-}
-
-.footer-item:first-child {
-  margin-top: 20px;
 }
 
 .footer-contacts .location {
@@ -430,7 +422,7 @@ footer .container {
 }
 
 .filtered-title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
