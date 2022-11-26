@@ -11,7 +11,7 @@
   --footer-bg-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --hero-bg-color: #2f303a;
-  --team-bg-color: #f5f4fa;
+  --grey-bg-color: #f5f4fa;
   --color-white: #ffffff;
   --color-black: #000000;
 }
@@ -145,7 +145,11 @@ header .container {
 }
 
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  background-color: var(--hero-bg-color);
 }
 
 .hero-text {
@@ -209,6 +213,33 @@ header .container {
   margin-right: 30px;
 }
 
+.benefits-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--grey-bg-color);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-antenna::before {
+  background-image: url("../images/antenna.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/clock.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../images/diagram.svg");
+}
+
+.icon-astronaut::before {
+  background-image: url("../images/astronaut.svg");
+}
+
 .benefits-item:last-child {
   margin-right: 0px;
 }
@@ -247,7 +278,7 @@ header .container {
 /* --------------------------------------Our Team--------------------------------- */
 
 .team {
-  background-color: var(--team-bg-color);
+  background-color: var(--grey-bg-color);
 }
 
 .team-title {
@@ -364,7 +395,7 @@ header .container {
 
 .filter-button {
   padding: 6px 22px;
-  background-color: var(--team-bg-color);
+  background-color: var(--grey-bg-color);
   color: #212121;
   font-weight: 500;
   font-size: 16px;
