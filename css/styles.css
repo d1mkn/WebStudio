@@ -219,7 +219,6 @@ header .container {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--grey-bg-color);
-  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
