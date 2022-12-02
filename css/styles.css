@@ -467,7 +467,7 @@ header .container {
 
 .bordered-icon:hover,
 .bordered-icon:focus {
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .bordered-icon .icon {
@@ -684,16 +684,11 @@ header .container {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
 
 .filtered-products {
   width: 370px;
-  margin-bottom: 30px;
-  margin-right: 30px;
-}
-
-.filtered-products:nth-child(3n) {
-  margin-right: 0px;
 }
 
 .filtered-products img {
@@ -716,6 +711,7 @@ header .container {
   position: absolute;
   height: 100%;
   padding: 63px 24px;
+  background-color: var(--accent-color);
   transform: translateY(100%);
   transition-property: opacity, transform;
   transition-duration: 250ms;
@@ -730,7 +726,6 @@ header .container {
 
 .filtered-link:hover .portfolio-overlay-text,
 .filtered-link:focus .portfolio-overlay-text {
-  background-color: var(--accent-color);
   opacity: 0.9;
   transform: translateY(0%);
 }
