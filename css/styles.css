@@ -738,8 +738,9 @@ header .container {
 .filtered-link .portfolio-overlay-text {
   content: '';
   position: absolute;
+  padding: 0px 24px;
   transform: translateY(100%);
-  transition-property: opacity, transform;
+  transition-property: opacity, transform, padding;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
