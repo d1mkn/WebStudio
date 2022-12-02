@@ -49,7 +49,7 @@
       <section class="hero">
         <div class="overlay">
           <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -82,12 +82,15 @@
           <h2 class="competencies-title">Чим ми займаємося</h2>
           <ul class="competencies-list">
             <li class="competencies-item">
+              <p class="overlay-text">Десктопні додатки</p>
               <img src="images/img1.jpg" alt="coding process" width="370" />
             </li>
             <li class="competencies-item">
+              <p class="overlay-text">Мобільні додатки</p>
               <img src="images/img2.jpg" alt="mobile app" width="370" />
             </li>
             <li class="competencies-item">
+              <p class="overlay-text">Дизайнерські рішення</p>
               <img src="images/img3.jpg" alt="colors" width="370" />
             </li>
           </ul>
@@ -239,37 +242,37 @@
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-item">
-              <a href="#"  class="bordered-icon"
+              <a href="#" class="bordered-icon"
                 ><svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#client1"></use></svg
               ></a>
             </li>
             <li class="clients-item">
-              <a href="#"  class="bordered-icon"
+              <a href="#" class="bordered-icon"
                 ><svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#client2"></use></svg
               ></a>
             </li>
             <li class="clients-item">
-              <a href="#"  class="bordered-icon"
+              <a href="#" class="bordered-icon"
                 ><svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#client3"></use></svg
               ></a>
             </li>
             <li class="clients-item">
-              <a href="#"  class="bordered-icon"
+              <a href="#" class="bordered-icon"
                 ><svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#client4"></use></svg
               ></a>
             </li>
             <li class="clients-item">
-              <a href="#"  class="bordered-icon"
+              <a href="#" class="bordered-icon"
                 ><svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#client5"></use></svg
               ></a>
             </li>
             <li class="clients-item">
-              <a href="#"  class="bordered-icon"
+              <a href="#" class="bordered-icon"
                 ><svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#client6"></use></svg
               ></a>
@@ -330,5 +333,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-icon-button" data-modal-close>
+          <svg class="close-icon" width="30" height="30"></svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
