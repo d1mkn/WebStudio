@@ -489,6 +489,7 @@ header .container {
 
 .footer .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .adress-block {
@@ -545,7 +546,6 @@ header .container {
 .footer-social {
   display: inline-flex;
   flex-direction: column;
-  margin-left: 70px;
 }
 
 .footer-social-title {
@@ -587,26 +587,18 @@ header .container {
   fill: var(--color-white);
 }
 
-.subscribe {
+.subscribe-form {
   display: flex;
-  margin-left: 94px;
+  flex-direction: column;
 }
 
-.subscribe-form {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr 1.2fr;
-  grid-template-rows: 1.5fr 1.5fr 0.1fr;
-  gap: 0px 12px;
-  grid-template-areas:
-    'footer-label footer-label footer-label'
-    'footer-input footer-input footer-button'
-    '. . .';
-  width: 570px;
-  height: 86px;
+.subscribe {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
 }
 
 .footer-label {
-  grid-area: footer-label;
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -617,7 +609,6 @@ header .container {
 }
 
 .footer-input {
-  grid-area: footer-input;
   width: 358px;
   height: 50px;
   padding-left: 15px;
@@ -630,7 +621,6 @@ header .container {
 }
 
 .footer-button {
-  grid-area: footer-button;
   display: flex;
   align-items: center;
   justify-content: center;
