@@ -181,7 +181,7 @@ ul {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-overlay.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-overlay.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,16 +262,16 @@ ul {
   background-repeat: no-repeat;
 }
 .benefits__icon--antenna::before {
-  background-image: url("/images/antenna.svg");
+  background-image: url("../../images/antenna.svg");
 }
 .benefits__icon--clock::before {
-  background-image: url("/images/clock.svg");
+  background-image: url("../../images/clock.svg");
 }
 .benefits__icon--diagram::before {
-  background-image: url("/images/diagram.svg");
+  background-image: url("../../images/diagram.svg");
 }
 .benefits__icon--astronaut::before {
-  background-image: url("/images/astronaut.svg");
+  background-image: url("../../images/astronaut.svg");
 }
 
 .competencies {
