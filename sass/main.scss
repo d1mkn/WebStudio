@@ -1,2 +1,44 @@
-@import "./utils/variables";
-@import "./components/page-header";
+@import './utils/variables';
+@import './components/page-header';
+@import './components/header-logo';
+@import './components/hero-section';
+@import './components/benefits-section';
+@import './components/competencies-section';
+@import './components/team-section';
+@import './components/clients-section';
+@import './components/page-footer';
+@import './components/modal';
+@import './components/portfolio';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @extend %body;
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
+
+ul {
+  @extend %ul;
+}
+
+.section {
+  @extend %section;
+}
+
+.container {
+  @extend %container;
+}
+
+.round-icon {
+  @extend %round-icon;
+}
+
+.icon {
+  @extend %icon;
+}

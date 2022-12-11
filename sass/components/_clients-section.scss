@@ -1,0 +1,50 @@
+.clients {
+  &__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: inline-flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.bordered-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid $main-svg-bg-color;
+  border-radius: 4px;
+  fill: $main-svg-bg-color;
+}
+
+.bordered-icon:hover,
+.bordered-icon:focus {
+  border-color: $accent-color;
+}
+
+.bordered-icon .icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bordered-icon:hover .icon,
+.bordered-icon:focus .icon {
+  fill: $accent-color;
+}

@@ -1,0 +1,124 @@
+.filter {
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    padding: 6px 22px;
+    background-color: $grey-bg-color;
+    color: #212121;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__item {
+    margin-right: 8px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: $accent-color;
+    color: $color-white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.active {
+  padding: 6px 25px;
+  background-color: $accent-color;
+  color: $color-white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filtered {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 370px;
+  }
+
+  &__item--image {
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+
+  &__link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__text--overlay {
+    position: absolute;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: $accent-color;
+    transform: translateY(100%);
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.55;
+    color: $color-white;
+    letter-spacing: 0.03em;
+    opacity: 0;
+  }
+
+  &__link:hover &__text--overlay,
+  &__link:focus &__text--overlay {
+    opacity: 0.9;
+    transform: translateY(0%);
+  }
+
+  &__text {
+    position: relative;
+    padding: 24px 20px;
+    background: $color-white;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    color: $title-text-color;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+}

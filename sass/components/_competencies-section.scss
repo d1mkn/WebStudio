@@ -1,0 +1,49 @@
+.competencies {
+  padding-top: 0px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+    height: 294px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__text {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 370px;
+    transform: translate(-50%, 0%);
+    font-family: inherit;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $color-white;
+    background-color: $overlay-text-bg-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

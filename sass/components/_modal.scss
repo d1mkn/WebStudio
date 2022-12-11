@@ -1,0 +1,172 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-bg-color;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  visibility: visible;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 528px;
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $color-white;
+    border: 0;
+  }
+
+  &__close-button-icon {
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__close-button-icon:hover,
+  &__close-button-icon-button:focus &__close-button-icon {
+    fill: $accent-color;
+  }
+
+  &__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  &__lable {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+
+  &__input {
+    margin-top: 4px;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid $form-border-color;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input:focus,
+  &__input:focus + &__icon {
+    outline: none;
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    top: 51%;
+    left: 14px;
+    fill: $color-black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__text-area {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+  }
+
+  &__text-area::placeholder {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $main-text-color;
+    opacity: 0.5;
+  }
+
+  &__policy {
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+
+  &__link {
+    color: $accent-color;
+  }
+
+  &__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &__checkbox-icon {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+
+  &__checkbox:checked + &__checkbox-icon {
+    background-image: url(/images/checked-checkbox.svg);
+    fill: $accent-color;
+  }
+
+  &__button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0px;
+    background-color: $accent-color;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $color-white;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: $button-active;
+  }
+}
