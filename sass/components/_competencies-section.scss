@@ -1,6 +1,10 @@
 .competencies {
   padding-top: 0px;
 
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   &__title {
     margin-bottom: 50px;
     font-weight: 700;

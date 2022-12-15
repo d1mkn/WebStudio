@@ -13,24 +13,33 @@
 
   &__list {
     display: flex;
+    gap: 30px;
     list-style: none;
     margin-top: 50px;
     text-align: center;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__card {
-    margin-right: 30px;
     background-color: $color-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-  }
 
-  &__card:last-child {
-    margin-right: 0px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc(95.9% / 2);
+    }
   }
 
   &__card img {
     display: block;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
+      height: inherit;
+    }
   }
 
   &__meta {

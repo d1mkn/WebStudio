@@ -8,18 +8,20 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
     margin-bottom: 50px;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
-    display: inline-flex;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-  &__item {
-    margin-right: 30px;
-  }
-
-  &__item:last-child {
-    margin-right: 0px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      gap: 30px;
+    }
   }
 }
 
@@ -33,6 +35,10 @@
   border: 1px solid $main-svg-bg-color;
   border-radius: 4px;
   fill: $main-svg-bg-color;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
 }
 
 .bordered-icon:hover,

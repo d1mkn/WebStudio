@@ -1,7 +1,26 @@
 .benefits {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+  }
+
   &__list {
     display: flex;
     list-style: none;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc(95.9% / 2);
+    }
   }
 
   &__title {
@@ -19,14 +38,6 @@
     line-height: 1.71;
     width: 270px;
     // color: $main-text-color;
-  }
-
-  &__item {
-    margin-right: 30px;
-  }
-
-  &__item:last-child {
-    margin-right: 0px;
   }
 
   &__item::before {

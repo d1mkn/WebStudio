@@ -5,19 +5,31 @@
 .page-header__container {
   display: flex;
   align-items: center;
-  width: 1200px;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .navigation {
   display: flex;
-  margin-left: 93px;
   list-style: none;
 
-  &__item {
-    margin-left: 50px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    gap: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    gap: 50px;
   }
 
   &__link {
@@ -56,14 +68,30 @@
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: auto;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 
   &__item {
-    margin-left: 50px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
 
   &__item:first-child {
-    margin-left: 0px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
   }
 
   &__link {
@@ -73,6 +101,11 @@
     padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @extend %header-link-style;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 
   &__link:hover,
