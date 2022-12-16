@@ -43,6 +43,7 @@
       padding-left: 40px;
       background-color: $color-white;
       overflow-y: hidden;
+      z-index: 9;
 
       @media screen and (min-width: 768px) {
         display: none;
@@ -65,7 +66,7 @@
     }
 
     .contacts__link.tel {
-      margin-top: 302px;
+      margin-top: 45%;
       margin-bottom: 30px;
       font-size: 34px;
       line-height: 1.17;
