@@ -713,6 +713,7 @@ ul {
 @media (min-width: 768px) and (max-width: 1199px) {
   .subscribe--column {
     flex-direction: column;
+    align-items: center;
   }
 }
 .subscribe__label {
