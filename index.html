@@ -12,12 +12,18 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body>
+  <body class="body">
     <header class="page-header">
       <div class="page-header__container">
         <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
         <nav>
-          <ul class="navigation">
+          <button type="button" class="navigation__button" data-menu-button>
+            <svg class="navigation__button--icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="navigation__button--icon-close" href="./images/icons.svg#nav-close"></use>
+              <use class="navigation__button--icon-open" href="./images/icons.svg#nav-open"></use>
+            </svg>
+          </button>
+          <ul class="navigation" data-menu>
             <li class="navigation__item">
               <a class="navigation__link current" href="./index.html">Студія</a>
             </li>
@@ -26,6 +32,16 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакти</a>
+            </li>
+            <li class="navigation-contacts-item">
+              <a class="contacts__link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="navigation-contacts-item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="socials">
+              <a class="socials__item" href="#">Instagram</a><a class="socials__item" href="#">Twitter</a
+              ><a class="socials__item" href="#">Facebook</a><a class="socials__item" href="#">LinkedIn</a>
             </li>
           </ul>
         </nav>
@@ -37,7 +53,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111"
+            <a class="contacts__link tel" href="tel:+380961111111"
               ><svg class="contacts__icon--smartphone" width="10" height="16"><use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11
               11</a
             >
@@ -401,5 +417,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
