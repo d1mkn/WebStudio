@@ -18,6 +18,10 @@
     margin-top: 50px;
     text-align: center;
 
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+
     @media (min-width: 768px) and (max-width: 1199px) {
       flex-wrap: wrap;
     }
@@ -28,6 +32,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
     @media (min-width: 768px) and (max-width: 1199px) {
       flex-basis: calc(95.9% / 2);
     }
@@ -35,6 +43,11 @@
 
   &__card img {
     display: block;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: inherit;
+    }
 
     @media (min-width: 768px) and (max-width: 1199px) {
       width: 100%;

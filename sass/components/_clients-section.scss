@@ -19,8 +19,20 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    @media screen and (max-width: 479px) {
+      gap: 30px;
+    }
+
     @media (min-width: 768px) and (max-width: 1199px) {
       gap: 30px;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 479px) {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
     }
   }
 }
@@ -35,6 +47,14 @@
   border: 1px solid $main-svg-bg-color;
   border-radius: 4px;
   fill: $main-svg-bg-color;
+
+  @media screen and (max-width: 479px) {
+    flex-basis: calc(95.9% / 2);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
 
   @media (min-width: 768px) and (max-width: 1199px) {
     width: 226px;
