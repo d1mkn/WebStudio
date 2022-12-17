@@ -59,6 +59,10 @@
   &__item {
     width: 370px;
 
+    @media (min-width: 350px) and (max-width: 400px) {
+      padding: 0px 15px;
+    }
+
     @media (min-width: 768px) and (max-width: 1199px) {
       width: calc(95.9% / 2);
     }
