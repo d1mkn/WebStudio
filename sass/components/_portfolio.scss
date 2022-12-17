@@ -4,6 +4,12 @@
     list-style: none;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
   }
 
   &__button {
@@ -21,14 +27,9 @@
     border: 0;
     border-radius: 4px;
     cursor: pointer;
-  }
 
-  &__item {
-    margin-right: 8px;
-  }
-
-  &__item:last-child {
-    margin-right: 0px;
+    @media (max-width: 767px) {
+    }
   }
 
   &__button:hover,
@@ -52,14 +53,26 @@
     flex-wrap: wrap;
     list-style: none;
     gap: 30px;
+
+    @media (max-width: 767px) {
+      justify-content: space-around;
+    }
   }
 
   &__item {
     width: 370px;
+
+    @media (min-width: 767px) and (max-width: 1199px) {
+      width: calc(95.9% / 2);
+    }
   }
 
   &__item--image {
     display: block;
+
+    @media (min-width: 767px) and (max-width: 1199px) {
+      width: 100%;
+    }
   }
 
   &__link {

@@ -45,6 +45,10 @@
       overflow-y: hidden;
       z-index: 9;
 
+      @media screen and (max-width: 400px) {
+        padding-left: 0;
+      }
+
       @media screen and (min-width: 768px) {
         display: none;
       }
