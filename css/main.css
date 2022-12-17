@@ -1178,7 +1178,7 @@ ul {
 .filtered__item {
   width: 370px;
 }
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .filtered__item {
     width: 47.95%;
   }
@@ -1186,7 +1186,7 @@ ul {
 .filtered__item--image {
   display: block;
 }
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .filtered__item--image {
     width: 100%;
   }
@@ -1227,6 +1227,11 @@ ul {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .filtered__text {
+    height: 146px;
+  }
 }
 .filtered__title {
   margin-bottom: 4px;

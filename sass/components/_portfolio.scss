@@ -27,9 +27,6 @@
     border: 0;
     border-radius: 4px;
     cursor: pointer;
-
-    @media (max-width: 767px) {
-    }
   }
 
   &__button:hover,
@@ -62,7 +59,7 @@
   &__item {
     width: 370px;
 
-    @media (min-width: 767px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
       width: calc(95.9% / 2);
     }
   }
@@ -70,7 +67,7 @@
   &__item--image {
     display: block;
 
-    @media (min-width: 767px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
       width: 100%;
     }
   }
@@ -117,6 +114,10 @@
     background: $color-white;
     border: 1px solid #eeeeee;
     border-top: 0;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      height: 146px;
+    }
   }
 
   &__title {
