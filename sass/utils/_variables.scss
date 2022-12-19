@@ -104,3 +104,9 @@ $form-border-color: rgba(33, 33, 33, 0.2);
 %round-icon:focus .icon {
   fill: $color-white;
 }
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

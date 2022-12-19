@@ -4,15 +4,23 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-overlay.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mobile-hero-overlay-480.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $hero-bg-color;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/mobile-hero-overlay-960.jpg');
+  }
+
   @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/desktop-hero-overlay-1600.jpg');
   }
 }
 
