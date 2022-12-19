@@ -100,6 +100,10 @@
     color: $color-white;
     letter-spacing: 0.03em;
     opacity: 0;
+
+    @media screen and (max-width: 767px) {
+      padding: 35px 24px;
+    }
   }
 
   &__link:hover &__text--overlay,
