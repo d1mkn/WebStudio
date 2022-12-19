@@ -276,6 +276,11 @@
     @media screen and (max-width: 767px) {
       display: none;
     }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      width: 14px;
+      height: 10px;
+    }
   }
 
   &__icon--smartphone {
@@ -285,6 +290,11 @@
 
     @media screen and (max-width: 767px) {
       display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
     }
   }
 
