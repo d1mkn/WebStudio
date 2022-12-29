@@ -47,3 +47,11 @@ ul {
 .icon {
   @extend %icon;
 }
+
+img {
+  @extend %img;
+}
+
+.modal-open {
+  overflow: hidden;
+}

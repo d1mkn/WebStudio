@@ -13,10 +13,17 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="page-header">
       <div class="page-header__container">
         <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
         <nav>
+          <button type="button" class="navigation__button" aria-expanded="false">
+            <svg class="navigation__button--icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="navigation__button--icon-close" href="./images/icons.svg#nav-close"></use>
+              <use class="navigation__button--icon-open" href="./images/icons.svg#nav-open"></use>
+            </svg>
+          </button>
           <ul class="navigation">
             <li class="navigation__item">
               <a class="navigation__link current" href="./index.html">Студія</a>
@@ -26,6 +33,16 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакти</a>
+            </li>
+            <li class="navigation-contacts-item">
+              <a class="contacts__link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="navigation-contacts-item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="socials">
+              <a class="socials__item" href="#">Instagram</a><a class="socials__item" href="#">Twitter</a
+              ><a class="socials__item" href="#">Facebook</a><a class="socials__item" href="#">LinkedIn</a>
             </li>
           </ul>
         </nav>
@@ -37,7 +54,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111"
+            <a class="contacts__link tel" href="tel:+380961111111"
               ><svg class="contacts__icon--smartphone" width="10" height="16"><use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11
               11</a
             >
@@ -47,6 +64,7 @@
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero">
         <div class="hero__overlay">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -54,6 +72,7 @@
         </div>
       </section>
 
+      <!-- BENEFITS -->
       <section class="benefits section">
         <div class="benefits container">
           <h2 class="benefits__title visually-hidden">Наші переваги</h2>
@@ -78,32 +97,44 @@
         </div>
       </section>
 
+      <!-- COMPETENCIES -->
       <section class="competencies section">
         <div class="competencies container">
           <h2 class="competencies__title">Чим ми займаємося</h2>
           <ul class="competencies__list">
             <li class="competencies__item">
               <p class="competencies__text">Десктопні додатки</p>
-              <img src="images/img1.jpg" alt="coding process" width="370" />
+              <img srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x" src="images/img1.jpg" alt="coding process" width="370" />
             </li>
             <li class="competencies__item">
               <p class="competencies__text">Мобільні додатки</p>
-              <img src="images/img2.jpg" alt="mobile app" width="370" />
+              <img srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" src="images/img2.jpg" alt="mobile app" width="370" />
             </li>
             <li class="competencies__item">
               <p class="competencies__text">Дизайнерські рішення</p>
-              <img src="images/img3.jpg" alt="colors" width="370" />
+              <img srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" src="images/img3.jpg" alt="colors" width="370" />
             </li>
           </ul>
         </div>
       </section>
 
+      <!-- OUR TEAM -->
       <section class="team section">
         <div class="team container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img src="./images/ihor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+              <picture>
+                <source srcset="./images/desktop-ihor-270.jpg 1x, ./images/desktop-ihor-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet-ihor-354.jpg 1x, ./images/tablet-ihor-708.jpg 2x" media="(min-width: 786px)" />
+                <img
+                  srcset="./images/mobile-ihor-450.jpg 1x, ./images/mobile-ihor-900.jpg 2x"
+                  src="./images/mobile-ihor-450.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__meta--name">Ігор Дем'яненко</h3>
                 <p class="team__meta--position">Product Designer</p>
@@ -136,7 +167,11 @@
               </div>
             </li>
             <li class="team__card">
-              <img src="./images/olha.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <picture>
+                <source srcset="./images/desktop-olha-270.jpg 1x, ./images/desktop-olha-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet-olha-354.jpg 1x, ./images/tablet-olha-708.jpg 2x" media="(min-width: 786px)" />
+                <img srcset="./images/mobile-olha-900.jpg 2x" src="./images/mobile-olha-450.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__meta--name">Ольга Рєпіна</h3>
                 <p class="team__meta--position">Frontend Developer</p>
@@ -169,7 +204,11 @@
               </div>
             </li>
             <li class="team__card">
-              <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260" />
+              <picture>
+                <source srcset="./images/desktop-mykola-270.jpg 1x, ./images/desktop-mykola-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet-mykola-354.jpg 1x, ./images/tablet-mykola-708.jpg 2x" media="(min-width: 786px)" />
+                <img srcset="./images/mobile-mykola-900.jpg 2x" src="./images/mobile-mykola-450.jpg" alt="Микола Тарасов" width="270" height="260" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__meta--name">Микола Тарасов</h3>
                 <p class="team__meta--position">Marketing</p>
@@ -202,7 +241,17 @@
               </div>
             </li>
             <li class="team__card">
-              <img src="./images/mihailo.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+              <picture>
+                <source srcset="./images/desktop-mihailo-270.jpg 1x, ./images/desktop-mihailo-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet-mihailo-354.jpg 1x, ./images/tablet-mihailo-708.jpg 2x" media="(min-width: 786px)" />
+                <img
+                  srcset="./images/mobile-mihailo-900.jpg 2x"
+                  src="./images/mobile-mihailo-450.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__meta--name">Михайло Єрмаков</h3>
                 <p class="team__meta--position">UI Designer</p>
@@ -238,6 +287,7 @@
         </div>
       </section>
 
+      <!-- CLIENTS -->
       <section class="clients section">
         <div class="clients container">
           <h2 class="clients__title">Постійні клієнти</h2>
@@ -283,6 +333,7 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="page-footer">
       <div class="page-footer__container container">
         <div class="page-footer__adress">
@@ -347,8 +398,7 @@
       </div>
     </footer>
 
-    <!-- modal -->
-
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-button" data-modal-close>
@@ -401,5 +451,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -13,10 +13,17 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="page-header">
       <div class="page-header__container">
         <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
         <nav>
+          <button type="button" class="navigation__button" aria-expanded="false">
+            <svg class="navigation__button--icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="navigation__button--icon-close" href="./images/icons.svg#nav-close"></use>
+              <use class="navigation__button--icon-open" href="./images/icons.svg#nav-open"></use>
+            </svg>
+          </button>
           <ul class="navigation">
             <li class="navigation__item">
               <a class="navigation__link" href="./index.html">Студія</a>
@@ -26,6 +33,16 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакти</a>
+            </li>
+            <li class="navigation-contacts-item">
+              <a class="contacts__link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="navigation-contacts-item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="socials">
+              <a class="socials__item" href="#">Instagram</a><a class="socials__item" href="#">Twitter</a
+              ><a class="socials__item" href="#">Facebook</a><a class="socials__item" href="#">LinkedIn</a>
             </li>
           </ul>
         </nav>
@@ -37,7 +54,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111"
+            <a class="contacts__link tel" href="tel:+380961111111"
               ><svg class="contacts__icon--smartphone" width="10" height="16"><use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11
               11</a
             >
@@ -65,7 +82,17 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/technocrack.jpg" alt="Technocrack web-site image" width="370" />
+                <picture>
+                  <source srcset="./images/desktop-technocrack-370.jpg 1x, ./images/desktop-technocrack-540.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-technocrack-354.jpg 1x, ./images/tablet-technocrack-708.jpg 2x" media="(min-width: 786px)" />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-technocrack-900.jpg 2x"
+                    src="./images/mobile-technocrack-450.jpg"
+                    alt="Technocrack web-site image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Технокряк</h3>
                   <p class="filtered__desc">Веб-сайт</p>
@@ -78,7 +105,23 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/neworlean-vs-goldenstar.jpg" alt="Poster New Orlean vs Golden Star" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/desktop-neworlean-vs-goldenstar-370.jpg 1x, ./images/desktop-neworlean-vs-goldenstar-540.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/tablet-neworlean-vs-goldenstar-354.jpg 1x, ./images/tablet-neworlean-vs-goldenstar-708.jpg 2x"
+                    media="(min-width: 786px)"
+                  />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-neworlean-vs-goldenstar-900.jpg 2x"
+                    src="./images/mobile-neworlean-vs-goldenstar-450.jpg"
+                    alt="Poster New Orlean vs Golden Star"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Постер New Orlean vs Golden Star</h3>
                   <p class="filtered__desc">Дизайн</p>
@@ -91,7 +134,17 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/seafood.jpg" alt="Seafood app image" width="370" />
+                <picture>
+                  <source srcset="./images/desktop-seafood-370.jpg 1x, ./images/desktop-seafood-540.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-seafood-354.jpg 1x, ./images/tablet-seafood-708.jpg 2x" media="(min-width: 786px)" />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-seafood-900.jpg 2x"
+                    src="./images/mobile-seafood-450.jpg"
+                    alt="Seafood app image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Ресторан Seafood</h3>
                   <p class="filtered__desc">Додаток</p>
@@ -104,7 +157,17 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/prime.jpg" alt="Prime project image" width="370" />
+                <picture>
+                  <source srcset="./images/desktop-prime-370.jpg 1x, ./images/desktop-prime-540.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-prime-354.jpg 1x, ./images/tablet-prime-708.jpg 2x" media="(min-width: 786px)" />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-prime-900.jpg 2x"
+                    src="./images/mobile-prime-450.jpg"
+                    alt="Prime project image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Проєкт Prime</h3>
                   <p class="filtered__desc">Маркетинг</p>
@@ -118,7 +181,17 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/boxes.jpg" alt="Boxes project image" width="370" />
+                <picture>
+                  <source srcset="./images/desktop-boxes-370.jpg 1x, ./images/desktop-boxes-540.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-boxes-354.jpg 1x, ./images/tablet-boxes-708.jpg 2x" media="(min-width: 786px)" />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-boxes-900.jpg 2x"
+                    src="./images/mobile-boxes-450.jpg"
+                    alt="Boxes project image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Проєкт Boxes</h3>
                   <p class="filtered__desc">Додаток</p>
@@ -131,7 +204,17 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/inspiration.jpg" alt="Inspiration has no Borders web-site image" width="370" />
+                <picture>
+                  <source srcset="./images/desktop-inspiration-370.jpg 1x, ./images/desktop-inspiration-540.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-inspiration-354.jpg 1x, ./images/tablet-inspiration-708.jpg 2x" media="(min-width: 786px)" />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-inspiration-900.jpg 2x"
+                    src="./images/mobile-inspiration-450.jpg"
+                    alt="Inspiration has no Borders web-site image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Inspiration has no Borders</h3>
                   <p class="filtered__desc">Веб-сайт</p>
@@ -144,7 +227,23 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/limited-edition.jpg" alt="Limited Edition design image" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/desktop-limited-edition-370.jpg 1x, ./images/desktop-limited-edition-540.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/tablet-limited-edition-354.jpg 1x, ./images/tablet-limited-edition-708.jpg 2x"
+                    media="(min-width: 786px)"
+                  />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-limited-edition-900.jpg 2x"
+                    src="./images/mobile-limited-edition-450.jpg"
+                    alt="Limited Edition design image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Видання Limited Edition</h3>
                   <p class="filtered__desc">Дизайн</p>
@@ -157,7 +256,17 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/lab.jpg" alt=" LAB project image" width="370" />
+                <picture>
+                  <source srcset="./images/desktop-lab-370.jpg 1x, ./images/desktop-lab-540.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-lab-354.jpg 1x, ./images/tablet-lab-708.jpg 2x" media="(min-width: 786px)" />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-lab-900.jpg 2x"
+                    src="./images/mobile-lab-450.jpg"
+                    alt=" LAB project image"
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Проєкт LAB</h3>
                   <p class="filtered__desc">Маркетинг</p>
@@ -170,7 +279,23 @@
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
                   відомості про компанію чи приватну особу.
                 </p>
-                <img class="filtered__item--image" src="./images/growing-business.jpg" alt="" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/desktop-growing-business-370.jpg 1x, ./images/desktop-growing-business-540.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/tablet-growing-business-354.jpg 1x, ./images/tablet-growing-business-708.jpg 2x"
+                    media="(min-width: 786px)"
+                  />
+                  <img
+                    class="filtered__item--image"
+                    srcset="./images/mobile-growing-business-900.jpg 2x"
+                    src="./images/mobile-growing-business-450.jpg"
+                    alt=""
+                    width="370"
+                  />
+                </picture>
                 <div class="filtered__text">
                   <h3 class="filtered__title">Growing Business</h3>
                   <p class="filtered__desc">Додаток</p>
@@ -245,5 +370,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
